@@ -11,6 +11,15 @@ const fragment = document.createDocumentFragment()
 const cards = document.getElementById('cards')
 let carrito = {}
 
+// ====================  COPYRIGHT  ====================
+const copyright = document.querySelector('.copyright-text .copyright')
+
+const year = new Date();
+const actual = year.getFullYear();
+console.log(actual)
+
+copyright.textContent = actual
+
 // ==================================  botones  ==================================================
 cards.addEventListener('click', e =>{
     addCarrito(e)

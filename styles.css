@@ -135,3 +135,32 @@ header{
     cursor: pointer;
     font-size: 24px;
 }
+/* FOOTER */
+footer{
+    background-color: #5A5766;
+    color: #EDFFEC;
+}
+.cont-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-logo{
+    font-size: 36px;
+    text-align: center;
+}
+.footer-info ul{
+    list-style: none;
+}
+.footer-info ul li{
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 30px;
+}
+.footer-info ul a{
+    color: #EDFFEC;
+    text-decoration: none;
+}
+.footer-social-media a{
+    color: #EDFFEC;
+}
