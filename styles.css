@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+.navbar {
+    background-color: #5A5766;
+        
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+}
+.nav-logo{
+    color: #EDFFEC;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+.nav-logo h4{
+    margin-bottom: 0px;
+    font-weight: 600;
+    font-size: 16px;
+}
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+    margin-bottom: 0px;
+}
+.nav-links li{
+    list-style: none;
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+.nav-links a{
+    text-decoration: none;
+    color: #EDFFEC;
+
+}
+.nav-cart{
+    color: #EDFFEC;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+.nav-cart h5{
+    background-color: #5A5766;
+    text-align: center;
+    font-size: 10px;
+    line-height: 15px;
+    font-weight: 600;
+}
+.cart-number{
+    right: -8px;
+    top: -8px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+
+}
+.number-item{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: #FF9505;
+    text-align: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.burger div{
+    background-color: #EDFFEC; 
+    width: 20px;
+    height: 2px;
+    margin: 5px;
+}
+/* FIN NAVBAR */
+header{
+    height: calc(100vh - 8vh);
+    background-image: linear-gradient(to top, hsla(258, 43%, 68%, 0.5) 0%, hsla(317, 88%, 87%, 0.5) 100%), url(./img/malgorzata-bujalska-Zn0tDIFf8wk-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+.text-head{
+    margin-top: 25%;
+}
+/* CARRITO */
+.item-list{
+    position: fixed;
+    padding: 30px;
+    display: block;
+    top: 0px;
+    right: 0px;
+    height: 100vh;
+    background-color: #A99F96;
+    width: 30vw;
+    transform: translate(110%);
+    -webkit-transform: translate(110%);
+    -moz-transform: translate(110%);
+    -ms-transform: translate(110%);
+    -o-transform: translate(110%);
+    transition: transform .3s ease-in-out;
+    -webkit-transition: transform .3s ease-in-out;
+    -moz-transition: transform .3s ease-in-out;
+    -ms-transition: transform .3s ease-in-out;
+    -o-transition: transform .3s ease-in-out;
+}
+.spread{
+    transform: translate(0);
+    -webkit-transform: translate(0);
+    -moz-transform: translate(0);
+    -ms-transform: translate(0);
+    -o-transform: translate(0);
+}
+.close-icon{
+    margin-bottom: 60px;
+}
+.close-icon i{
+    cursor: pointer;
+    font-size: 24px;
+}

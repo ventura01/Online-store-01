@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>NAVIGATION</title>
+</head>
+<body>
+    <section id="inicio" class="navbar">
+        <nav class="container">
+            <div class="nav-logo">
+                <h4>The NAV</h4>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#productos">Products</a></li>
+                <li><a href="#servicios">Services</a></li>
+                <li><a href="#contacto">Contact</a></li>
+            </ul>
+            <div class="nav-cart">
+                <i class="bi bi-basket3-fill"></i>
+                <div class="cart-number">
+                    <h5 class="cart-item"><span class="number-item">0</span></h5>
+                </div>
+            </div>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </section>
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-head">
+                    <h1 class="titulo-head">La Tienda en Linea</h1>
+                    <h3 class="subtitulo-head">Lorem ipsum dolor sit amet, consectetur adipisicing.</h3>
+                    <button type="button" class="btn btn-secondary">Comprar</button>
+                </div>
+                <div class="col-md-6 img-head">
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="productos" id="productos">
+            <div class="container">
+                <h2 class="titulo-seccion">Productos</h2>
+                <div class="row" id="cards">
+                    <template id="template-cards">
+                        <div class="col-md-4">
+                            <div class="card mb-3" style="width: 18rem;">
+                                <img src="" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Card title</h5>
+                                  <p class="card-text">Precio</p>
+                                  <a href="#" class="btn btn-primary"><i class="bi bi-cart-plus-fill"></i>Comprar</a>
+                                </div>
+                              </div>
+                        </div>
+                    </template>
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+    <section id="cart-items">
+        <div class="row item-list">
+            <div class="row">
+                <div class="col">
+                    <div class="close-icon">
+                        <i class="bi bi-x-circle"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-2 text-center mb-4"><h4>Carrito de compras</h4></div>
+            <table class="table">
+                <thead>
+                    <tr>
+                    <th scope="col">No.</th>
+                    <th scope="col">Producto</th>
+                    <th scope="col">Cant.</th>
+                    <th scope="col">Precio</th>
+                    <th scope="col"></th>
+                    <th scope="col">Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                <!-- <template id="template-carrito"> -->
+                    <th scope="row">1</th>
+                    <td>Te Thai</td>
+                    <td>1</td>
+                    <td>99.99</td>
+                    <td>
+                        <button type="button" class="btn btn-primary"><i class="bi bi-chevron-up"></i></button>
+                        <button type="button" class="btn btn-danger"><i class="bi bi-chevron-down"></i></button>
+                    </td>
+                    <td>$<span>500</span></td>
+                <!-- </template> -->
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <footer id="contacto">
+        <row class="container">
+            <div class="col-md-4"></div>
+        </row>
+    </footer>
+</body>
+
+
+<script src="app.js"></script>
+</html>
