@@ -35,6 +35,10 @@ items.addEventListener('click', (e)=>{
 
 document.addEventListener('DOMContentLoaded', ()=>{
     fetchAPI()
+    if(localStorage.getItem('carrito')){
+        carrito = JSON.parse(localStorage.getItem('carrito'))
+        pintarCarrito()
+    }
 })
 
 const fetchAPI = async ()=>{
@@ -100,6 +104,9 @@ const pintarCarrito = ()=>{
     items.appendChild(fragment)
     // console.log(carrito)
     pintarFooter()
+
+    localStorage.setItem('carrito', JSON.stringify(carrito))
+
 }
 
 const pintarFooter = ()=>{
