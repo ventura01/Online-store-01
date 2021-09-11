@@ -135,6 +135,9 @@ header{
     cursor: pointer;
     font-size: 24px;
 }
+.bi-chevron-up, .bi-chevron-down{
+    pointer-events: none;
+}
 /* FOOTER */
 footer{
     background-color: #5A5766;
@@ -163,4 +166,12 @@ footer{
 }
 .footer-social-media a{
     color: #EDFFEC;
+}
+
+.footer-social-media{
+    display: flex;
+    justify-content: flex-end;
+}
+.social-media-icon{
+    margin-left: 20px;
 }
