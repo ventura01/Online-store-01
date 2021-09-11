@@ -41,13 +41,29 @@
                 <div class="col-md-6 text-head">
                     <h1 class="titulo-head">La Tienda en Linea</h1>
                     <h3 class="subtitulo-head">Lorem ipsum dolor sit amet, consectetur adipisicing.</h3>
-                    <button type="button" class="btn btn-secondary">Comprar</button>
+                    <button type="button" class="btn btn-secondary"><a class="btn-head" href="#productos">Comprar</a></button>
                 </div>
                 <div class="col-md-6 img-head">
                 </div>
             </div>
         </div>
     </header>
+    <div class="ribbon">
+        <div class="row ribbon-row">
+            <div class="col-md-4 ribbon-info">
+                <i class="bi bi-shield-check ribbon-icon"></i>
+                <p class="ribbon-text">Seguridad</p>
+            </div>
+            <div class="col-md-4 ribbon-info">
+                <i class="bi bi-truck ribbon-icon"></i>
+                <p class="ribbon-text">Delivery</p>
+            </div>
+            <div class="col-md-4 ribbon-info">
+                <i class="bi bi-patch-check ribbon-icon"></i>
+                <p class="ribbon-text">Calidad</p>
+            </div>
+        </div>
+    </div>
     <main>
         <section class="productos" id="productos">
             <div class="container">
@@ -55,12 +71,12 @@
                 <div class="row" id="cards">
                     <template id="template-cards">
                         <div class="col-md-4">
-                            <div class="card mb-3" style="width: 18rem;">
+                            <div class="card mb-3">
                                 <img src="" class="card-img-top" alt="...">
                                 <div class="card-body">
                                   <h5 class="card-title">Card title</h5>
                                   <p class="card-text fw-bold">Precio</p>
-                                  <a href="#" class="btn btn-primary"><i class="bi bi-cart-plus-fill me-3"></i>Comprar</a>
+                                  <a href="#" class="btn btn-secondary"><i class="bi bi-cart-plus-fill me-3"></i>Comprar</a>
                                 </div>
                               </div>
                         </div>
@@ -80,7 +96,7 @@
                 </div>
             </div>
             <div class="row mb-2 text-center mb-4"><h4>Carrito de compras</h4></div>
-            <table class="table table-sm">
+            <table class="table table-sm table-borderless">
                 <thead>
                     <tr>
                     <th scope="col">Id.</th>

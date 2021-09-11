@@ -19,7 +19,7 @@ nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    min-height: 8vh;
+    min-height: 6vh;
 }
 .nav-logo{
     color: #EDFFEC;
@@ -90,8 +90,8 @@ nav{
 }
 /* FIN NAVBAR */
 header{
-    height: calc(100vh - 8vh);
-    background-image: linear-gradient(to top, hsla(258, 43%, 68%, 0.5) 0%, hsla(317, 88%, 87%, 0.5) 100%), url(./img/malgorzata-bujalska-Zn0tDIFf8wk-unsplash.jpg);
+    height: calc(75vh - 6vh);
+    background-image: linear-gradient(to top, hsla(258, 43%, 68%, 0.5) 0%, #fbc1ea80 100%), url(./img/malgorzata-bujalska-Zn0tDIFf8wk-unsplash.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -99,6 +99,36 @@ header{
 }
 .text-head{
     margin-top: 25%;
+}
+.btn-head{
+    color: #EDFFEC;
+    text-decoration: none;
+}
+/* RIBBON */
+.ribbon{
+    /* display: flex; */
+    background-color: #fbc1ea80;
+}
+.ribbon-row{
+    /* height: calc(75vh - 8vh); */
+    height: 225px;
+}
+.ribbon-info{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    /* color: #EDFFEC; */
+    /* display: block; */
+}
+.ribbon-icon{
+    color: #5A5766;
+    font-size: 2.5rem;
+}
+.ribbon-text{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #5A5766;
 }
 /* CARRITO */
 .item-list{
@@ -154,11 +184,13 @@ footer{
 }
 .footer-info ul{
     list-style: none;
+    padding-top: 1rem;
+    margin-bottom: 0px;
 }
 .footer-info ul li{
-    font-size: 12px;
-    font-weight: 600;
-    line-height: 30px;
+    font-size: 1rem;
+    /* font-weight: 600; */
+    /* line-height: 30px; */
 }
 .footer-info ul a{
     color: #EDFFEC;
