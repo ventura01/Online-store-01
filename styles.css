@@ -91,7 +91,7 @@ nav{
 /* FIN NAVBAR */
 header{
     height: calc(75vh - 6vh);
-    background-image: linear-gradient(to top, hsla(258, 43%, 68%, 0.5) 0%, #fbc1ea80 100%), url(./img/malgorzata-bujalska-Zn0tDIFf8wk-unsplash.jpg);
+    background-image: linear-gradient(to top, #9f8ad080 0%, #fbc1ea80 100%), url(./img/malgorzata-bujalska-Zn0tDIFf8wk-unsplash.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -106,11 +106,9 @@ header{
 }
 /* RIBBON */
 .ribbon{
-    /* display: flex; */
-    background-color: #fbc1ea80;
+    background-color: #9f8ad080;
 }
 .ribbon-row{
-    /* height: calc(75vh - 8vh); */
     height: 225px;
 }
 .ribbon-info{
@@ -186,11 +184,12 @@ footer{
     list-style: none;
     padding-top: 1rem;
     margin-bottom: 0px;
+    padding-left: 30%;
 }
 .footer-info ul li{
-    font-size: 1rem;
-    /* font-weight: 600; */
-    /* line-height: 30px; */
+    font-size: .8rem;
+    font-weight: 600;
+    line-height: 25px;
 }
 .footer-info ul a{
     color: #EDFFEC;
@@ -206,4 +205,37 @@ footer{
 }
 .social-media-icon{
     margin-left: 20px;
+}
+
+/* ==============  GIVAWAY  ============= */
+.deadline{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 15rem;
+}
+.giveaway{
+    font-weight: 600;
+}
+.deadline-cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.deadline-format{
+    background-color: #5A5766;
+    margin: 1rem;
+    color: #EDFFEC;
+    width: 6rem;
+    height: 6rem;
+    text-align: center;
+    padding: 15px 0;
+
+}
+.deadline-format h4{
+    font-weight: 600;
+}
+.deadline-format span{
+    font-weight: 300;
 }
